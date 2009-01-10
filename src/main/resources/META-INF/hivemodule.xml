@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="amplafi.mock.tapestry" version="0.2.0">
+    <service-point id="programmableTapestryGlobals" interface="org.amplafi.tapestry4.ProgrammableTapestryGlobals">
+        <invoke-factory>
+            <construct class="com.amplafi.test.ProgrammableTapestryGlobals"/>
+        </invoke-factory>
+    </service-point>
+    <implementation service-id="tapestry.globals.RequestGlobals">
+        Stores the request and response for the current thread.
+    
+        <invoke-factory service-id="hivemind.lib.ServicePropertyFactory">
+            <construct service-id="programmableTapestryGlobals" property="requestGlobals"/>
+        </invoke-factory>
+    </implementation>
+    <implementation service-id="tapestry.request.CookieSource">
+        <invoke-factory service-id="hivemind.lib.ServicePropertyFactory">
+            <construct service-id="programmableTapestryGlobals" property="cookieSource"/>
+        </invoke-factory>
+    </implementation>
+    <contribution configuration-id="hivemind.ApplicationDefaults">
+        <default symbol="amplafi.tapestry.mode" value="test" />
+    </contribution>    
+    <contribution configuration-id="hivemind.EagerLoad">
+        <load service-id="programmableTapestryGlobals" />
+    </contribution>    
+</module>
