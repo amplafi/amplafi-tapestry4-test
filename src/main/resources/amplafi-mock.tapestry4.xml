@@ -2,7 +2,7 @@
 <module id="amplafi.mock.tapestry" version="0.2.0">
     <service-point id="programmableTapestryGlobals" interface="org.amplafi.tapestry4.ProgrammableTapestryGlobals">
         <invoke-factory>
-            <construct class="com.amplafi.test.ProgrammableTapestryGlobals"/>
+            <construct class="org.amplafi.tapestry4.ProgrammableTapestryGlobals"/>
         </invoke-factory>
     </service-point>
     <implementation service-id="tapestry.globals.RequestGlobals">
