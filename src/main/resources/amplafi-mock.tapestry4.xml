@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module id="amplafi.mock.tapestry" version="0.2.0">
+<module id="amplafi.mock.tapestry4" version="0.2.0">
     <service-point id="programmableTapestryGlobals" interface="org.amplafi.tapestry4.ProgrammableTapestryGlobals">
         <invoke-factory>
             <construct class="org.amplafi.tapestry4.ProgrammableTapestryGlobals"/>
