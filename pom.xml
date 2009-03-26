@@ -15,46 +15,9 @@
     <name>Amplafi Tapestry4 Test</name>
     <description>Test code and utility methods</description>
     <url>http://amplafi.org</url>
-    <inceptionYear>2006</inceptionYear>
-    <organization>
-        <name>Amplafi</name>
-        <url>http://amplafi.com</url>
-    </organization>
     <build>
-        <defaultGoal>deploy</defaultGoal>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <inherited>false</inherited>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar</goal>
-                            <!-- 
-                            <goal>test-jar</goal>
-                             -->
-                        </goals>
-                        <configuration>
-                            <attach>true</attach>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <inherited>false</inherited>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
