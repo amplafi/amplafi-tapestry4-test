@@ -27,7 +27,7 @@
         </plugins>
     </build>
     <reporting>
-        <outputDirectory>../target/site/${artifactId}</outputDirectory>
+        <outputDirectory>target/site/${pom.artifactId}</outputDirectory>
     </reporting>
     <dependencies>
         <dependency>
