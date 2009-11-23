@@ -21,7 +21,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
                 <configuration>
-                    <siteDirectory>${artifactId}/src/site</siteDirectory>
+                    <siteDirectory>${project.artifactId}/src/site</siteDirectory>
                 </configuration>
             </plugin>
             <plugin>
@@ -59,19 +59,9 @@
         </plugins>
     </build>
     <reporting>
-        <outputDirectory>target/site/${pom.artifactId}</outputDirectory>
+        <outputDirectory>target/site/${project.artifactId}</outputDirectory>
     </reporting>
     <dependencies>
-        <dependency>
-            <groupId>org.easymock</groupId>
-            <artifactId>easymock</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.easymock</groupId>
-            <artifactId>easymockclassextension</artifactId>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
