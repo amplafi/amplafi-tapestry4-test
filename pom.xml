@@ -16,6 +16,7 @@
     <description>Test code and utility methods</description>
     <url>http://amplafi.org</url>
     <build>
+        <defaultGoal>deploy</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
