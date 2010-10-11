@@ -87,10 +87,10 @@
 
             <scope>compile</scope>
             <exclusions>
-                <exclusion>
+                <!-- (surefire 2.7) exclusion>
                     <groupId>junit</groupId>
                     <artifactId>junit</artifactId>
-                </exclusion>
+                </exclusion-->
             </exclusions>
         </dependency>
     </dependencies>
