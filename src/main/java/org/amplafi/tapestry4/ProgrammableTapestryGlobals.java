@@ -27,7 +27,7 @@ import org.apache.tapestry.web.WebActivator;
 import org.apache.tapestry.web.WebContext;
 import org.apache.tapestry.web.WebRequest;
 import org.apache.tapestry.web.WebResponse;
-import org.easymock.classextension.internal.ClassExtensionHelper;
+import org.easymock.internal.ClassExtensionHelper;
 import org.easymock.internal.MocksControl;
 import org.easymock.internal.RuntimeExceptionWrapper;
 
