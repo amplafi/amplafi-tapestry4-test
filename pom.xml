@@ -63,6 +63,10 @@
     </reporting>
     <dependencies>
         <dependency>
+            <groupId>hivemind</groupId>
+            <artifactId>hivemind</artifactId>
+        </dependency>    
+        <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
         </dependency>
